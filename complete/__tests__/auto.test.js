@@ -12,7 +12,7 @@ afterEach(async () => {
 });
 
 describe('Sushi Tests', () => {
-  test('checks the the first sushi is a div', async () => {
+  test('checks that the first sushi is a div', async () => {
     const isDiv = await driver.findElement(By.id('1')).getTagName()
     expect(isDiv).toBe('div')
   })
